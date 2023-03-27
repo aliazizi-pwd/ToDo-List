@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon image" href="./Image/images.png">
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <section id="information">
+      <h1>Welcome ToDo List JavaScript</h1>
+    </section>
+
+    <section id="command">
+      <div id="container">
+        <div id="letter">
+          <input
+            type="text"
+            name="inputAdd"
+            class="input-todo"
+            placeholder="Plesae Enter Text"
+          />
+          <button type="submit" name="btnAdd" class="button-todo">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="selected-todo">
+          <select name="selectedAdd" id="selected-add">
+            <option value="all">All</option>
+            <option value="completed">completed</option>
+            <option value="unCompleted">unCompleted</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <div class="list-todo">
+      <ul class="item-todo"></ul>
+    </div>
+    <div class="list-information">
+      <ul class="todo-info"></ul>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
